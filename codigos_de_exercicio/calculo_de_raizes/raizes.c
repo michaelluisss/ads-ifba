@@ -14,17 +14,22 @@ Se Δ>0
 calcule as duas raízes e exiba
 Valide se a é diferente de zero antes de realizar os cálculos.*/
 #include <stdio.h>
-#include <stdlib>
-int main(){
-    float a,b,c,raiz1,raiz2,delta;
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    float a, b, c, raiz1, raiz2, delta, raizes;
 
     printf("digite os coeficientes e separe por espaco: ");
-    scanf("%f %f %f",&a,&b,&c);
-    delta =(b*b)-4*a*c;
-    if(delta =>0){
-        if(delta > 0){
-            printf("Temos uma equacao quadratica com duas raiz\n");
-            
-        }
+    scanf("%f %f %f", &a, &b, &c);
+    delta = (b * b) - 4 * a * c;
+    if (delta >= 0)
+    {
+
+        printf("Temos uma equacao quadratica com duas raiz\n");
+        raizes = sqrt(delta);
+        raiz1 = (-b + raizes) / (2 * a);
+        raiz2 = (-b - raizes) / (2 * a);
+        printf("As raizes da equacao sao:\n x1= %.1f x2=%.1f", raiz1, raiz2);
     }
 }
