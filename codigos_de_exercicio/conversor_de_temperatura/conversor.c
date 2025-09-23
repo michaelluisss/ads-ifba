@@ -30,7 +30,7 @@ int main(){
         case 2:
         printf("Digite o valor em Fahrenheit: ");
         scanf("%f",&far);
-        celsius = (far-32)*1.8;
+        celsius = (far - 32) * 5 / 9;
 
         printf("%fC\n",celsius);
         break;
