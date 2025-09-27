@@ -18,7 +18,7 @@ Valide se a é diferente de zero antes de realizar os cálculos.*/
 #include <math.h>
 int main()
 {
-    float a, b, c, raiz1, raiz2, delta, raizes;
+    float a, b, c, raiz1, raiz2, delta;
 
     printf("digite os coeficientes e separe por espaco: ");
     scanf("%f %f %f", &a, &b, &c);
@@ -27,9 +27,12 @@ int main()
     {
 
         printf("Temos uma equacao quadratica com duas raiz\n");
-        raizes = sqrt(delta);
-        raiz1 = (-b + raizes) / (2 * a);
-        raiz2 = (-b - raizes) / (2 * a);
+        
+        raiz1 = (-b + sqrt(delta)) / (2 * a);
+        raiz2 = (-b - rsqrt(delta)) / (2 * a);
         printf("As raizes da equacao sao:\n x1= %.1f x2=%.1f", raiz1, raiz2);
+    }
+    else{
+        printf("Essa equacao nao tem raizes reais!")
     }
 }
