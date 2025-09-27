@@ -14,8 +14,8 @@ Exiba a categoria correspondente ao usuário.*/
 #include <math.h>
 
 int main(){
-    float peso,altura,resultado;
+    double peso,altura,resultado;
     resultado = peso/pow(altura,altura);
-    printf("%f",&resultado);
+    printf("%d",&resultado);
     return 0;
 }
