@@ -29,10 +29,10 @@ int main()
         printf("Temos uma equacao quadratica com duas raiz\n");
         
         raiz1 = (-b + sqrt(delta)) / (2 * a);
-        raiz2 = (-b - rsqrt(delta)) / (2 * a);
+        raiz2 = (-b - sqrt(delta)) / (2 * a);
         printf("As raizes da equacao sao:\n x1= %.1f x2=%.1f", raiz1, raiz2);
     }
     else{
-        printf("Essa equacao nao tem raizes reais!")
+        printf("Essa equacao nao tem raizes reais!");
     }
 }
