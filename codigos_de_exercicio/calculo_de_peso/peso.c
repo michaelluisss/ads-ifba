@@ -16,6 +16,6 @@ Exiba a categoria correspondente ao usuário.*/
 int main(){
     double peso,altura,resultado;
     resultado = peso/pow(altura,altura);
-    printf("%d",&resultado);
+    printf("%lf",&resultado);
     return 0;
 }
