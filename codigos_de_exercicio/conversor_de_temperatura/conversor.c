@@ -32,11 +32,14 @@ int main(){
         scanf("%f",&far);
         celsius = (far - 32) * 5 / 9;
 
-        printf("%fC\n",celsius);
+        printf("%.2f°C\n",celsius);
         break;
     
         default:
-        printf("numero invalido\n");
+        if(valor !=3){printf("numero invalido\n");
+
+        }
+        
         break;
     }
 

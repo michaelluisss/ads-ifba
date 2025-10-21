@@ -14,8 +14,8 @@ Exiba a categoria correspondente ao usuário.*/
 #include <math.h>
 
 int main(){
-    double peso,altura,resultado;
-    resultado = peso/pow(altura,altura);
-    printf("%lf",&resultado);
+    int peso = 1,altura = 1,imc = 1;
+    imc = peso/(altura * altura);
+    printf("%i",imc);
     return 0;
 }

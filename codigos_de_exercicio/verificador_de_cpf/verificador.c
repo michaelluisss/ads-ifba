@@ -18,6 +18,7 @@ int main()
     }
     if(v1==div1){
         soma=(a1*11)+(a2*10)+(a3*9)+(a4*8)(a5*7)+(a6*6)+(a7*5)+(a8*4)+(a9*3)+(v1*2);
+        printf("cpf valido");
     }else{
         printf("Cpf invalido");
     }
