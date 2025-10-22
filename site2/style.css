@@ -1,6 +1,17 @@
 .principal{
-    background-color: darkkhaki;
+    background-color: rgb(207, 99, 36);
     margin: 10%;
     text-align: center;
-    color: rgb(11, 88, 88);
+    color: rgb(0, 0, 0);
+    padding: 5%;
+    border: 1px solid;
+    border-radius: 3%;
+}
+.body{
+
+    background-color: rgb(145, 83, 26);
+}
+.button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 72, 10);
 }
