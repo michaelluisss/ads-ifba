@@ -1,6 +1,7 @@
 .principal{
     background-color: rgb(207, 99, 36);
     margin: 10%;
+    margin-top: 10%;
     text-align: center;
     color: rgb(0, 0, 0);
     padding: 5%;
@@ -10,8 +11,24 @@
 .body{
 
     background-color: rgb(145, 83, 26);
+    
 }
 .button{
     color: rgb(255, 255, 255);
     background-color: rgb(228, 72, 10);
+    font-size: 110%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    
+}
+li{
+    background-color: #ffeea1;
+    border: 3px solid rgb(146, 52, 15);
+    border-radius: 5% ;
+    margin: 1%;
+}
+input{
+    font-size: 120%;
 }
