@@ -1,7 +1,7 @@
 let p = [
-  {  i:1 ,n: 'Mouse', p: 49.90, q: 0 },
-  { i:2 ,n: 'Teclado', p: 149.99 ,q:0 },
-  { i:3 ,n: 'Monitor', p: 899.50,q:0 }
+  { n: 'Mouse', p: 49.90, q: 0 },
+  { n: 'Teclado', p: 149.99 ,q:0 },
+  { n: 'Monitor', p: 899.50,q:0 }
 ];
 const readlineSync = require('readline-sync')
 let r =1
