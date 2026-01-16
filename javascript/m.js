@@ -1,7 +1,9 @@
 let p = [
-  { n: 'Mouse', p: 49.90, q: 0 },
-  { n: 'Teclado', p: 149.99 ,q:0 },
-  { n: 'Monitor', p: 899.50,q:0 }
+  { n: 'Mouse',   p: 49.90, q:0},
+  { n: 'Teclado', p: 149.99,q:0},
+  { n: 'Monitor', p: 899.50,q:0},
+  { n: 'Mousepad',p: 10.50, q:0}
+  
 ];
 const readlineSync = require('readline-sync')
 let r =1
@@ -29,27 +31,31 @@ do{
           if(ItemConfirmado === 1){
             p[itemSelecionado - 1].q++
 
+          }else if(ItemConfirmado === 2){
+            console.log('Item cancelado! Voltando...')
           }
 
-          }else if(itemSelecionado === p.length){
-
+          }else if(itemSelecionado === p.length + 1){
+            console.log('Saindo...')
           }else{
             console.log("Item invalido!")
             cont = 1
 
           }
         }while(cont === 0)
+          cont = 0
       }else if(r === 2){
         console.log('\nCarrinho:\n')
         console.log('Nome\tPreço\tQuantidade')
         for( i = 0;i < p.length;i++){
           if(p[i].q > 0){
           console.log(`${p[i].n}\t${p[i].p}\t${p[i].q}`)
-          valorTotal+= p[i].p
+          valorTotal+= p[i].p * p[i].q
           }
           
         }
           console.log(`Valor total: ${valorTotal}`)
+          valorTotal = 0
       }else if(r === 0){
 
       }else{
